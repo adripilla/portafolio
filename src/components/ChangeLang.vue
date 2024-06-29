@@ -1,8 +1,10 @@
 <template>
-  <div>
-    <p>{{ currentLanguage }}</p>
-    <button @click="toggleLanguage">Toggle Language</button>
-  </div>
+  <v-container>
+    <div class="btnLan">
+      <p style="margin-right: 1%;">{{ currentLanguage }}</p>
+      <v-btn color="primary" @click="toggleLanguage">language</v-btn>
+    </div>
+  </v-container>
 </template>
 
 <script>
@@ -24,4 +26,9 @@ export default {
 
 <style scoped>
 /* Estilos adicionales si son necesarios */
+.btnLan{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
 </style>

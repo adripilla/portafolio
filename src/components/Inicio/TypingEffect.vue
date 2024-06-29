@@ -121,6 +121,7 @@
     text-align: center;
     margin: 0;
     font-size: 1rem;
+    text-align: center;
   }
   </style>
   
