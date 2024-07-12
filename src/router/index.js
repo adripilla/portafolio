@@ -5,12 +5,12 @@ import Pruebas from '../views/PruebasView';
 
 const routes = [
   {
-    path: '/',
+    path: '/p',
     name: 'Home',
     component: Home
   },
   {
-    path: '/p',
+    path: '/',
     name: 'Pruebas',
     component: Pruebas
   }
