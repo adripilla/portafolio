@@ -47,6 +47,10 @@
     <PruebaEfecto backgroundColor="lightblue" direction="left" class="w-full">
       <SeccionUno />
     </PruebaEfecto>
+
+    <PruebaEfecto backgroundColor="lightblue" direction="left" class="w-full">
+      <FIRST></FIRST>
+    </PruebaEfecto>
   </div>
 </template>
 
@@ -57,6 +61,8 @@ import TypingEffect from '@/components/Inicio/TypingEffect';
 import ImgC from '@/components/Inicio/ImgC';
 import ResumenCv from '@/components/Inicio/CV';
 import ProyectoCard from '@/components/Inicio/ProyectoCard';
+import FIRST from '@/components/Inicio/FirstComp.vue';
+
 
 import ChangeLang from '@/components/ChangeLang';
 import { useStore } from 'vuex';
@@ -70,7 +76,8 @@ export default {
     ImgC,
     ChangeLang,
     ResumenCv,
-    ProyectoCard
+    ProyectoCard,
+    FIRST
   },
   setup() {
     const store = useStore();
