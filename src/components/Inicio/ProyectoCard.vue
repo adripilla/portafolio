@@ -5,17 +5,16 @@
       <h2 class="text-lg font-semibold">{{ name }}</h2>
       <p class="text-muted-foreground">{{ language }}</p>
       <div class="mt-4 flex justify-end space-x-2">
-        <button @click="toggleInfo" class="bg-secondary text-secondary-foreground hover-bg-secondary-80 px-4 py-2 rounded-full">{{ info }}</button>
-        <button v-if="bandera" class="bg-primary text-primary-foreground hover-bg-primary-80 px-4 py-2 rounded-full">{{ año }}</button>
+        <button @click="toggleInfo" class="bg-secondary text-secondary-foreground hover-bg-secondary-80 px-4 py-2 rounded-full">info</button>
+        <a v-if="bandera" :href="link" class="bg-primary text-primary-foreground hover-bg-primary-80 px-4 py-2 rounded-full">ver</a>
       </div>
       <div v-if="showInfo" class="info-content mt-4">
         <p>Año: {{ año }}</p>
-        <p>Información: {{ info }}</p>
+        <p>{{ info }}</p>
       </div>
     </div>
   </div>
 </template>
-
 
 <script>
 export default {
@@ -44,6 +43,10 @@ export default {
     año: {
       type: Number,
       default: 2024
+    },
+    link: {
+      type: String,
+      default: '#'
     }
   },
   data() {
@@ -59,9 +62,6 @@ export default {
 };
 </script>
 
-
-
-  
 <style scoped>
 /* Estilos personalizados */
 .proyecto-card {
@@ -167,4 +167,3 @@ export default {
   border-radius: 0.5rem;
 }
 </style>
-
